@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  Part2ViewController.swift
 //  DemoApp
 //
 //  Created by Ty Sang on 2018-01-27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class Part2ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
