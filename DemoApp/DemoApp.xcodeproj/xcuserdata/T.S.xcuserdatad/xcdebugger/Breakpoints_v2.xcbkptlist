@@ -2,4 +2,102 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoApp/Controllers/Part2/BattleAnalyzer.swift"
+            timestampString = "538871443.851797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "analyze(autobotTeam:deceptionTeam:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoApp.BattleAnalyzer.analyze(autobotTeam: Swift.Array&lt;DemoApp.Transformer&gt;, deceptionTeam: Swift.Array&lt;DemoApp.Transformer&gt;) -&gt; (numBattles: Swift.Int, winningTeam: Swift.Array&lt;DemoApp.Transformer&gt;, survivingMembers: Swift.Array&lt;DemoApp.Transformer&gt;)"
+                  moduleName = "DemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/T.S/Development/AequilibriumApp/DemoApp/DemoApp/Controllers/Part2/BattleAnalyzer.swift"
+                  timestampString = "538868363.880416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "6399">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoAppTests.BattleAnalyzer.analyze(autobotTeam: Swift.Array&lt;DemoAppTests.Transformer&gt;, deceptionTeam: Swift.Array&lt;DemoAppTests.Transformer&gt;) -&gt; (numBattles: Swift.Int, winningTeam: Swift.Array&lt;DemoAppTests.Transformer&gt;, survivingMembers: Swift.Array&lt;DemoAppTests.Transformer&gt;)"
+                  moduleName = "DemoAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/T.S/Development/AequilibriumApp/DemoApp/DemoApp/Controllers/Part2/BattleAnalyzer.swift"
+                  timestampString = "538868364.717629"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "6399">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DemoApp/Controllers/Part2/BattleAnalyzer.swift"
+            timestampString = "538871443.851915"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "analyze(autobotTeam:deceptionTeam:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoApp.BattleAnalyzer.analyze(autobotTeam: Swift.Array&lt;DemoApp.Transformer&gt;, deceptionTeam: Swift.Array&lt;DemoApp.Transformer&gt;) -&gt; (numBattles: Swift.Int, winningTeam: Swift.Array&lt;DemoApp.Transformer&gt;, survivingMembers: Swift.Array&lt;DemoApp.Transformer&gt;)"
+                  moduleName = "DemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/T.S/Development/AequilibriumApp/DemoApp/DemoApp/Controllers/Part2/BattleAnalyzer.swift"
+                  timestampString = "538868363.898265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "4867">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DemoAppTests.BattleAnalyzer.analyze(autobotTeam: Swift.Array&lt;DemoAppTests.Transformer&gt;, deceptionTeam: Swift.Array&lt;DemoAppTests.Transformer&gt;) -&gt; (numBattles: Swift.Int, winningTeam: Swift.Array&lt;DemoAppTests.Transformer&gt;, survivingMembers: Swift.Array&lt;DemoAppTests.Transformer&gt;)"
+                  moduleName = "DemoAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/T.S/Development/AequilibriumApp/DemoApp/DemoApp/Controllers/Part2/BattleAnalyzer.swift"
+                  timestampString = "538868364.721256"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "4867">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

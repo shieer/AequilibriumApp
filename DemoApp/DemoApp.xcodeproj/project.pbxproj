@@ -18,6 +18,13 @@
 		B811F7EA201D2AAC00B797AB /* Part2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811F7E9201D2AAC00B797AB /* Part2ViewController.swift */; };
 		B8A5206C201DB2D60046939A /* CastleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */; };
 		B8A5206D201DB2D60046939A /* CastleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */; };
+		B8A5206F201E5B4C0046939A /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206E201E5B4C0046939A /* Transformer.swift */; };
+		B8A52070201E5B4C0046939A /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206E201E5B4C0046939A /* Transformer.swift */; };
+		B8A52072201E5F630046939A /* BattleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A52071201E5F630046939A /* BattleAnalyzer.swift */; };
+		B8A52073201E5F630046939A /* BattleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A52071201E5F630046939A /* BattleAnalyzer.swift */; };
+		B8A52075201E61BB0046939A /* TransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A52074201E61BB0046939A /* TransformerTests.swift */; };
+		B8A52079201E64790046939A /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A52078201E64790046939A /* Int+Random.swift */; };
+		B8A5207A201E64790046939A /* Int+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A52078201E64790046939A /* Int+Random.swift */; };
 		B8BECE70201DA36E0004A276 /* CastleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BECE6F201DA36E0004A276 /* CastleTest.swift */; };
 		B8BECE71201DA58A0004A276 /* Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811F7E7201D2AA000B797AB /* Part1ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +63,10 @@
 		B811F7E7201D2AA000B797AB /* Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part1ViewController.swift; sourceTree = "<group>"; };
 		B811F7E9201D2AAC00B797AB /* Part2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part2ViewController.swift; sourceTree = "<group>"; };
 		B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleAnalyzer.swift; sourceTree = "<group>"; };
+		B8A5206E201E5B4C0046939A /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		B8A52071201E5F630046939A /* BattleAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAnalyzer.swift; sourceTree = "<group>"; };
+		B8A52074201E61BB0046939A /* TransformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformerTests.swift; sourceTree = "<group>"; };
+		B8A52078201E64790046939A /* Int+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Random.swift"; sourceTree = "<group>"; };
 		B8BECE6F201DA36E0004A276 /* CastleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				B811F7E3201D28B900B797AB /* Application */,
+				B8A52077201E645F0046939A /* Extensions */,
 				B811F7E2201D289C00B797AB /* Controllers */,
 				B811F7B8201D283E00B797AB /* Main.storyboard */,
 				B811F7BD201D283E00B797AB /* LaunchScreen.storyboard */,
@@ -125,6 +137,7 @@
 				B811F7C9201D283F00B797AB /* DemoAppTests.swift */,
 				B811F7CB201D283F00B797AB /* Info.plist */,
 				B8BECE6F201DA36E0004A276 /* CastleTest.swift */,
+				B8A52074201E61BB0046939A /* TransformerTests.swift */,
 			);
 			path = DemoAppTests;
 			sourceTree = "<group>";
@@ -168,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				B811F7E9201D2AAC00B797AB /* Part2ViewController.swift */,
+				B8A5206E201E5B4C0046939A /* Transformer.swift */,
+				B8A52071201E5F630046939A /* BattleAnalyzer.swift */,
 			);
 			path = Part2;
 			sourceTree = "<group>";
@@ -179,6 +194,14 @@
 				B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */,
 			);
 			path = Part1;
+			sourceTree = "<group>";
+		};
+		B8A52077201E645F0046939A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B8A52078201E64790046939A /* Int+Random.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +339,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B811F7EA201D2AAC00B797AB /* Part2ViewController.swift in Sources */,
+				B8A52072201E5F630046939A /* BattleAnalyzer.swift in Sources */,
+				B8A52079201E64790046939A /* Int+Random.swift in Sources */,
+				B8A5206F201E5B4C0046939A /* Transformer.swift in Sources */,
 				B811F7B5201D283E00B797AB /* AppDelegate.swift in Sources */,
 				B811F7E6201D292600B797AB /* HomeViewController.swift in Sources */,
 				B8A5206C201DB2D60046939A /* CastleAnalyzer.swift in Sources */,
@@ -328,8 +354,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8BECE70201DA36E0004A276 /* CastleTest.swift in Sources */,
+				B8A52075201E61BB0046939A /* TransformerTests.swift in Sources */,
+				B8A5207A201E64790046939A /* Int+Random.swift in Sources */,
 				B8A5206D201DB2D60046939A /* CastleAnalyzer.swift in Sources */,
 				B811F7CA201D283F00B797AB /* DemoAppTests.swift in Sources */,
+				B8A52073201E5F630046939A /* BattleAnalyzer.swift in Sources */,
+				B8A52070201E5B4C0046939A /* Transformer.swift in Sources */,
 				B8BECE71201DA58A0004A276 /* Part1ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

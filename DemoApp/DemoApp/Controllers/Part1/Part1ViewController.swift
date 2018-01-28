@@ -37,11 +37,11 @@ class Part1ViewController: UIViewController {
 
   @IBAction func generateTapped(_ sender: UIButton) {
 
-    let landSize: Int = Int(arc4random_uniform(UInt32(sizeMax)))+1
+    let landSize: Int = sizeMax.random()
     var land: [Int] = []
 
     for _ in 0..<landSize {
-      land.append(Int(arc4random_uniform(UInt32(heightMax)))+1)
+      land.append(heightMax.random())
     }
 
     let result = castleAnalyzer.landAnalyze(land: land)
