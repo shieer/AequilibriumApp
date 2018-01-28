@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CastelAnalyer {
+class CastleAnalyzer {
 
   func landAnalyze(land: [Int]) -> (peaks: [[Int]], valleys: [[Int]], numCastles: Int) {
     var peaks: [[Int]] = []
@@ -16,6 +16,11 @@ class CastelAnalyer {
     var numCastles: Int = 0
     var castle: [Int] = []
     var maybe: Maybe = .none
+
+    if land.count == 1 {
+      valleys.append(land)
+      return (peaks, valleys, valleys.count+peaks.count)
+    }
 
     for index in 0..<land.count-1 {
       if index == 0 {
@@ -35,8 +40,7 @@ class CastelAnalyer {
             castle.append(land[index])
           } else {
             // 11
-            peaks.append(land)
-            numCastles += 1
+            valleys.append(land)
           }
         }
       } else {

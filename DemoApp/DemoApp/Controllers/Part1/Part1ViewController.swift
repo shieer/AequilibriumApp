@@ -20,7 +20,7 @@ class Part1ViewController: UIViewController {
   var peaks: [[Int]] = []
   var valleys: [[Int]] = []
 
-  var castleAnalyzer: CastelAnalyer!
+  var castleAnalyzer: CastleAnalyzer!
 
 
   @IBOutlet weak var castleTableView: UITableView!
@@ -31,7 +31,7 @@ class Part1ViewController: UIViewController {
     super.viewDidLoad()
 
     // Do any additional setup after loading the view.
-    castleAnalyzer = CastelAnalyer()
+    castleAnalyzer = CastleAnalyzer()
     self.title = "The Castle Company"
   }
 
@@ -41,7 +41,7 @@ class Part1ViewController: UIViewController {
     var land: [Int] = []
 
     for _ in 0..<landSize {
-      land.append(Int(arc4random_uniform(UInt32(heightMax))))
+      land.append(Int(arc4random_uniform(UInt32(heightMax)))+1)
     }
 
     let result = castleAnalyzer.landAnalyze(land: land)

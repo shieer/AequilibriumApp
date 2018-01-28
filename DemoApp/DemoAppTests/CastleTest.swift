@@ -11,10 +11,10 @@ import XCTest
 
 class CastleTest: XCTestCase {
 
-  var castleAnalyzer: CastelAnalyer!
+  var castleAnalyzer: CastleAnalyzer!
   override func setUp() {
     super.setUp()
-    castleAnalyzer = CastelAnalyer()
+    castleAnalyzer = CastleAnalyzer()
   }
 
   override func tearDown() {
@@ -77,6 +77,28 @@ class CastleTest: XCTestCase {
 
     XCTAssertEqual(peaks.count, 1)
     XCTAssertEqual(valleys.count, 0)
+    XCTAssertEqual(numCastles, 1)
+
+  }
+
+  func testLand6() {
+
+    let land = [3,3]
+    let (peaks, valleys, numCastles) = castleAnalyzer.landAnalyze(land: land)
+
+    XCTAssertEqual(peaks.count, 0)
+    XCTAssertEqual(valleys.count, 1)
+    XCTAssertEqual(numCastles, 1)
+
+  }
+
+  func testLand7() {
+
+    let land = [3]
+    let (peaks, valleys, numCastles) = castleAnalyzer.landAnalyze(land: land)
+
+    XCTAssertEqual(peaks.count, 0)
+    XCTAssertEqual(valleys.count, 1)
     XCTAssertEqual(numCastles, 1)
 
   }
