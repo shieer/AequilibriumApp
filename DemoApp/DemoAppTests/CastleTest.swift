@@ -40,7 +40,7 @@ class CastleTest: XCTestCase {
     let (peaks, valleys, numCastles) = castleAnalyzer.landAnalyze(land: land)
 
     XCTAssertEqual(peaks.count, 0)
-    XCTAssertEqual(valleys.count, 0)
+    XCTAssertEqual(valleys.count, 1)
     XCTAssertEqual(numCastles, 1)
   }
 
@@ -55,5 +55,29 @@ class CastleTest: XCTestCase {
     XCTAssertEqual(numCastles, 2)
 
     XCTAssertEqual(peaks.first!, [4,4,4,4])
+  }
+
+  func testLand4() {
+
+    let land = [3,3,4,4,3,1,3,1,2,2]
+    let (peaks, valleys, numCastles) = castleAnalyzer.landAnalyze(land: land)
+
+    XCTAssertEqual(peaks.count, 2)
+    XCTAssertEqual(valleys.count, 3)
+    XCTAssertEqual(numCastles, 5)
+
+    XCTAssertEqual(valleys.first!, [3,3])
+  }
+
+
+  func testLand5() {
+
+    let land = [3,3,3,1]
+    let (peaks, valleys, numCastles) = castleAnalyzer.landAnalyze(land: land)
+
+    XCTAssertEqual(peaks.count, 1)
+    XCTAssertEqual(valleys.count, 0)
+    XCTAssertEqual(numCastles, 1)
+
   }
 }

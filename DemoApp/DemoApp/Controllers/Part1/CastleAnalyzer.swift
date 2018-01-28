@@ -19,14 +19,16 @@ class CastelAnalyer {
 
     for index in 0..<land.count-1 {
       if index == 0 {
-        numCastles += 1
+
         if land[index] > land[index+1] {
           // 21
           peaks.append([land[0]])
+          numCastles += 1
 
         } else if land[index] < land[index+1] {
           // 12
           valleys.append([land[0]])
+          numCastles += 1
         } else {
           if land.count > 2 {
             // 11*
@@ -34,6 +36,7 @@ class CastelAnalyer {
           } else {
             // 11
             peaks.append(land)
+            numCastles += 1
           }
         }
       } else {
@@ -68,7 +71,7 @@ class CastelAnalyer {
           // 22*
           if land[index] > land[index+1] {
             // 221
-            if maybe == .peak {
+            if maybe == .peak || maybe == .none {
               castle.append(land[index])
               peaks.append(castle)
               numCastles += 1
@@ -77,7 +80,7 @@ class CastelAnalyer {
             maybe = .none
           } else if land[index] < land[index+1] {
             // 223
-            if maybe == .valley {
+            if maybe == .valley || maybe == .none {
               castle.append(land[index])
               valleys.append(castle)
               numCastles += 1
@@ -87,10 +90,17 @@ class CastelAnalyer {
           } else {
             // 222
             castle.append(land[index])
+
+            if index == land.count-2 && castle.count == land.count - 1{
+              castle.append(land[index+1])
+              valleys.append(castle)
+              castle = []
+            }
           }
         }
       }
     }
-    return (peaks, valleys, numCastles)
+
+    return (peaks, valleys, valleys.count+peaks.count)
   }
 }

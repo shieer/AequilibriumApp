@@ -68,7 +68,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Quc-PR-b9w"/>
                                 </constraints>
-                                <state key="normal" title="Generate">
+                                <state key="normal" title="Generate Land">
                                     <color key="titleColor" red="0.36613184209999999" green="0.57848340269999998" blue="0.79612749810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -76,8 +76,8 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SQR-nJ-jcO">
-                                <rect key="frame" x="0.0" y="76" width="375" height="539"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="511"/>
+                                <color key="backgroundColor" red="0.36613184209999999" green="0.57848340269999998" blue="0.79612749810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CastleCell" id="hzQ-tB-qrq">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -86,6 +86,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.36613184209999999" green="0.57848340269999998" blue="0.79612749810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -93,7 +94,7 @@
                                     <outlet property="delegate" destination="XJU-p5-ABd" id="iM3-2p-24w"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-EV-dNk">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Land" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8z-EV-dNk">
                                 <rect key="frame" x="16" y="28" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="e3J-hs-Fa1"/>
@@ -102,24 +103,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw1-iH-tdg">
+                                <rect key="frame" x="16" y="594" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.36613184209999999" green="0.57848340269999998" blue="0.79612749810000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="SQR-nJ-jcO" firstAttribute="trailing" secondItem="cGd-LM-2Lg" secondAttribute="trailing" id="2Mr-mb-QJY"/>
                             <constraint firstItem="e8z-EV-dNk" firstAttribute="top" secondItem="cGd-LM-2Lg" secondAttribute="top" constant="8" id="2Qv-qf-H7a"/>
+                            <constraint firstItem="Vw1-iH-tdg" firstAttribute="top" secondItem="SQR-nJ-jcO" secondAttribute="bottom" constant="7" id="LEB-3s-wh0"/>
                             <constraint firstItem="vKA-9N-mQZ" firstAttribute="bottom" secondItem="cGd-LM-2Lg" secondAttribute="bottom" id="QKU-9N-FaF"/>
                             <constraint firstItem="vKA-9N-mQZ" firstAttribute="trailing" secondItem="cGd-LM-2Lg" secondAttribute="trailing" id="VLg-65-dzO"/>
-                            <constraint firstItem="vKA-9N-mQZ" firstAttribute="top" secondItem="SQR-nJ-jcO" secondAttribute="bottom" constant="8" id="fd2-oY-YAW"/>
+                            <constraint firstItem="cGd-LM-2Lg" firstAttribute="trailing" secondItem="Vw1-iH-tdg" secondAttribute="trailing" constant="16" id="e0T-ca-Dfc"/>
+                            <constraint firstItem="vKA-9N-mQZ" firstAttribute="top" secondItem="SQR-nJ-jcO" secondAttribute="bottom" constant="36" id="fd2-oY-YAW"/>
                             <constraint firstItem="SQR-nJ-jcO" firstAttribute="top" secondItem="e8z-EV-dNk" secondAttribute="bottom" constant="8" id="gFk-hS-V9u"/>
                             <constraint firstItem="SQR-nJ-jcO" firstAttribute="leading" secondItem="cGd-LM-2Lg" secondAttribute="leading" id="hOP-JL-SST"/>
+                            <constraint firstItem="Vw1-iH-tdg" firstAttribute="leading" secondItem="cGd-LM-2Lg" secondAttribute="leading" constant="16" id="iIK-yV-j6F"/>
                             <constraint firstItem="e8z-EV-dNk" firstAttribute="leading" secondItem="cGd-LM-2Lg" secondAttribute="leading" constant="16" id="kt1-qa-D7V"/>
                             <constraint firstItem="cGd-LM-2Lg" firstAttribute="trailing" secondItem="e8z-EV-dNk" secondAttribute="trailing" constant="16" id="trh-vo-W3l"/>
+                            <constraint firstItem="vKA-9N-mQZ" firstAttribute="top" secondItem="Vw1-iH-tdg" secondAttribute="bottom" constant="8" id="vJJ-n4-Pet"/>
                             <constraint firstItem="vKA-9N-mQZ" firstAttribute="leading" secondItem="cGd-LM-2Lg" secondAttribute="leading" id="zsu-Mi-cTH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cGd-LM-2Lg"/>
                     </view>
                     <connections>
                         <outlet property="castleTableView" destination="SQR-nJ-jcO" id="Zgu-kQ-rkh"/>
+                        <outlet property="landTextField" destination="e8z-EV-dNk" id="Kn6-Z9-G6S"/>
+                        <outlet property="totalCastlesLabel" destination="Vw1-iH-tdg" id="TP8-tk-k69"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PEG-8Z-c7H" userLabel="First Responder" sceneMemberID="firstResponder"/>

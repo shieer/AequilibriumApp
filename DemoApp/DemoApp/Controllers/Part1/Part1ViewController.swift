@@ -24,34 +24,33 @@ class Part1ViewController: UIViewController {
 
 
   @IBOutlet weak var castleTableView: UITableView!
+  @IBOutlet weak var landTextField: UITextField!
+  @IBOutlet weak var totalCastlesLabel: UILabel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     // Do any additional setup after loading the view.
     castleAnalyzer = CastelAnalyer()
-
     self.title = "The Castle Company"
   }
 
   @IBAction func generateTapped(_ sender: UIButton) {
 
     let landSize: Int = Int(arc4random_uniform(UInt32(sizeMax)))+1
-
     var land: [Int] = []
 
-    for index in 0..<landSize {
+    for _ in 0..<landSize {
       land.append(Int(arc4random_uniform(UInt32(heightMax))))
     }
 
     let result = castleAnalyzer.landAnalyze(land: land)
 
-    print(land)
+    landTextField.text = intArrayToString(array: land)
     peaks = result.peaks
     valleys = result.valleys
-
+    totalCastlesLabel.text = "Total castles: \(result.numCastles)"
     castleTableView.reloadData()
-    
   }
 
   override func didReceiveMemoryWarning() {
@@ -87,6 +86,7 @@ extension Part1ViewController: UITableViewDelegate, UITableViewDataSource {
     } else {
       cell.textLabel?.text = intArrayToString(array: valleys[indexPath.row])
     }
+    cell.textLabel?.textColor = UIColor.white
 
     return cell
   }
@@ -97,13 +97,18 @@ extension Part1ViewController: UITableViewDelegate, UITableViewDataSource {
 
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
+    let headerView = UIView()
     let label = UILabel(frame: CGRect(x: 16, y: 0, width: 200, height: 30))
 
     if section == 0 {
-      label.text = "Peaks"
+      label.text = "\(peaks.count) Peak(s)"
     } else {
-      label.text = "Valleys"
+      label.text = "\(valleys.count) Valley(s)"
     }
-    return label
+
+    headerView.addSubview(label)
+    headerView.backgroundColor = UIColor.white
+
+    return headerView
   }
 }
