@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class HomeViewController: UIViewController {
   
   override func viewDidLoad() {
@@ -32,5 +29,12 @@ class HomeViewController: UIViewController {
     let part1VC = self.storyboard?.instantiateViewController(withIdentifier: "Part1ViewController") as! Part1ViewController
     self.navigationController?.pushViewController(part1VC, animated: true)
   }
+
+  @IBAction func transformerTapped(_ sender: UIButton) {
+
+    let part2VC = self.storyboard?.instantiateViewController(withIdentifier: "Part2ViewController") as! Part2ViewController
+    self.navigationController?.pushViewController(part2VC, animated: true)
+  }
+
 
 }
