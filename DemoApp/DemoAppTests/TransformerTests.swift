@@ -70,7 +70,7 @@ class TransformerTests: XCTestCase {
 
   func testBattle2() {
     // Rule #2:
-    // if   one of the fighters is 3 or more points of skill above their opponent, they win the fight regardless of overall rating
+    // if one of the fighters is 3 or more points of skill above their opponent, they win the fight regardless of overall rating
     let transformer1 = Transformer(name: "Soundwave",
                                    team: .deception,
                                    strength: 8,

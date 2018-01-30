@@ -16,6 +16,7 @@
 		B811F7E6201D292600B797AB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811F7E5201D292600B797AB /* HomeViewController.swift */; };
 		B811F7E8201D2AA000B797AB /* Part1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811F7E7201D2AA000B797AB /* Part1ViewController.swift */; };
 		B811F7EA201D2AAC00B797AB /* Part2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811F7E9201D2AAC00B797AB /* Part2ViewController.swift */; };
+		B86DF48D20201085003ECCC5 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86DF48C20201085003ECCC5 /* ParseError.swift */; };
 		B8A5206C201DB2D60046939A /* CastleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */; };
 		B8A5206D201DB2D60046939A /* CastleAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */; };
 		B8A5206F201E5B4C0046939A /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A5206E201E5B4C0046939A /* Transformer.swift */; };
@@ -62,6 +63,7 @@
 		B811F7E5201D292600B797AB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B811F7E7201D2AA000B797AB /* Part1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part1ViewController.swift; sourceTree = "<group>"; };
 		B811F7E9201D2AAC00B797AB /* Part2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part2ViewController.swift; sourceTree = "<group>"; };
+		B86DF48C20201085003ECCC5 /* ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
 		B8A5206B201DB2D60046939A /* CastleAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleAnalyzer.swift; sourceTree = "<group>"; };
 		B8A5206E201E5B4C0046939A /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
 		B8A52071201E5F630046939A /* BattleAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleAnalyzer.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				B811F7E9201D2AAC00B797AB /* Part2ViewController.swift */,
 				B8A5206E201E5B4C0046939A /* Transformer.swift */,
 				B8A52071201E5F630046939A /* BattleAnalyzer.swift */,
+				B86DF48C20201085003ECCC5 /* ParseError.swift */,
 			);
 			path = Part2;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				B811F7E6201D292600B797AB /* HomeViewController.swift in Sources */,
 				B8A5206C201DB2D60046939A /* CastleAnalyzer.swift in Sources */,
 				B811F7E8201D2AA000B797AB /* Part1ViewController.swift in Sources */,
+				B86DF48D20201085003ECCC5 /* ParseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
