@@ -2,6 +2,8 @@
 
 This project is for demonstrating the Aequilibrium Assignments:
 
+Both part1 and part2 are inside one project, just compile the DemoApp.xcodeproj and run, you will see
+
 #### Part 1: The Castle Company
 
 This part includes simple UI to generate a random land with a maximum size 20, each height is maximum 5
@@ -19,8 +21,6 @@ This part includes simple UI to generate a random land with a maximum size 20, e
 7. [3]
 
 #### Part 2: The Transformation Company
-
-This part contains
 
 ###### Test cases:
 1. - Soundwave:D,8,9,2,6,9,5,6,10
